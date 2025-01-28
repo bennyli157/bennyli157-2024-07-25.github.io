@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This page is to showcase my Photoshop painting!">
+    <meta name="description" content="This page is to showcase my 3D pasta box!">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="Benny Li">
-    <title>Photoshop Painting Project - Benny Li Porfolio</title>
+    <title>Pasta Brand Project - Benny Li Portfolio</title>
     <link rel="icon" href="/images/logo.svg">
     <link rel="stylesheet" href="css/uikit.min.css"/>
     <link href="css/lightbox.css" rel="stylesheet">
@@ -47,15 +47,28 @@
         <div class="aL-Top">
             <div class="aL-Intro">
                 <h1 class="aL-Title">
-                    -Graphic Design
+                    -3D Graphic Design
                 </h1>
                 <h1 class="aL-Title-2">
-                    Photoshop Painting
+                    Pasta Package
                 </h1>
-            </div>
-                <a href="images/Mortimer.jpg" data-lightbox= "aL-img" data-title="Photoshop Painting" class="pZ-img">
-                    <img src="images/Mortimer-m.jpg" alt="aL-img" class="aL-img">
-                </a>
+             </div>    
+            <model-viewer class="custom-model-viewer" src="/images/pasta_cardbox-03.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/pasta_cardbox-03.png" shadow-intensity="1">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <!-- <div id="ar-prompt">
+                    <img src="img/ar_hand_prompt.png">
+                </div> -->
+            </model-viewer>            
+            <!-- <div class="aL-Intro-b">
+                <h1 class="aL-Title-b">
+                    Project Type: Graphic Design
+                </h1>
+            </div> -->
             <div class="aL-Intro-b">
                 <h1 class="aL-Title-b">
                     Programs used:
@@ -69,43 +82,78 @@
                         </div>
                             <h1 class="s-content">Photoshop</h1> 
                     </div>
+                    <div class="p-window">
+                        <div class="s-svg">
+                            <img src="images/AI.svg" alt="" class="logo-p">
+                        </div>
+                            <h1 class="s-content">Illustrator</h1>
+                    </div>
+                    <div class="p-window">
+                        <div class="s-svg">
+                            <img src="images/AD.svg" alt="" class="logo-p">
+                        </div>
+                            <h1 class="s-content">Dimensions</h1>
+                    </div>
                 </div>
             </div>
         </div>
-<div class="aLWrapper">
 
-    <h1 class="desc-title">Objectives</h1>
-    <div class="pPcontainer">
-        <p class="aLDesc4">The goal of the project is to show my skills for replicating an image into a painting through tools such as the brush, brush maker, blur, and the the layer function in photoshop.</p>
-        <div class="pPcontainerM">
-            <a href="images/brushes-l.jpg" data-lightbox= "aL-img" data-title="Brushes" class="pZ-img">
-                <img src="images/brushes.jpg" alt="aL-img" class="aL-img2">
-            </a>
-            <p class="aLDesc2-5">*List of brushes for the Painting</p> 
-        </div>
-    </div>
+<div class="aLWrapper">
+    <h1 class="desc-title">Variants</h1>
+    <!-- <h1 class="desc-title">Objectives</h1> -->
+    <!-- <p class="aLDesc1">The project's goal was to design an elegant pasta box package for the client, where they would be presented and reviewed further.</p>  -->
 </div>
  </div>
     <div class="aL-container">
-        <!-- <p class="aLDesc2">After looking at multiple photos for my painting assignment, I had my Photoshop instructor give insight on which image to paint. Finally, I decided which to trace and finish for my project. At first, I started on how to do the basics, mainly the brush tool to do the tracing and the start of the foundations for the painting. In short, I started slowly getting my feet wet to learn the basics of the program. 
-        </p>  -->
+        <!-- 6x6 Image Grid -->
+        <div class="uk-position-relative uk-visible-toggle uk-light custom-width" tabindex="-1" uk-slider>
+            <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
+                <li>
+                    <a href="images/pasta_cardbox-01.png" data-lightbox= "aL-img" data-title="Pasta Design-1" class="pZ-img">
+                        <img src="images/pasta_cardbox-01-m.png" alt="aL-img" class="aL-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pasta_cardbox-02.png" data-lightbox= "aL-img" data-title="Pasta Design-2" class="pZ-img">
+                        <img src="images/pasta_cardbox-02-m.png" alt="aL-img" class="aL-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pasta_cardbox-03.png" data-lightbox= "aL-img" data-title="Pasta Design-3" class="pZ-img">
+                        <img src="images/pasta_cardbox-03-m.png" alt="aL-img" class="aL-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pasta_cardbox-04.png" data-lightbox= "aL-img" data-title="Pasta Design-4" class="pZ-img">
+                        <img src="images/pasta_cardbox-04-m.png" alt="aL-img" class="aL-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pasta_cardbox-05.png" data-lightbox= "aL-img" data-title="Pasta Design-5" class="pZ-img">
+                        <img src="images/pasta_cardbox-05-m.png" alt="aL-img" class="aL-img">
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <p class="aLDesc2-5">*Image variants made for box design
+        </p> 
+        
+        <!-- End of 6x6 Image Grid -->
+        
         <h1 class="aL-dTitle">
             Results
         </h1>
-        <p class="aLDesc2">On the left is the original image, which was used as a trace reference for creating the final painting on the right.
-        </p> 
+        <!-- <p class="aLDesc2"> The image here is the final product to display the 3d model added into an image from unsplash, where I used Adobe Dimensions to adjust the lighting to fit the environment around the pastabox.
+        </p>  -->
             <div class="pPcontainer2">
                 <div class="pPContent1">
-                    <a href="images/Mortimer-og.jpg" data-lightbox= "aL-img" data-title="Original" class="pZ-img">
-                        <img src="images/Mortimer-og-m.jpg" alt="aL-img" class="aAimg">
+                    <a href="images/3d-pasta.jpg" data-lightbox= "aL-img" data-title="Final Product" class="pZ-img">
+                        <img src="images/3d-pasta-m2.jpg" alt="aL-img" class="aL-img">
                     </a>
-                    <p class="aLDesc3">*Photo</p>
-                </div>
-                <div class="pPContent2">
-                    <a href="images/Mortimer.jpg" data-lightbox= "aL-img" data-title="Painting" class="pZ-img">
-                        <img src="images/Mortimer-m.jpg" alt="aL-img" class="aAimg">
-                    </a>
-                    <p class="aLDesc3">*Painting</p>
                 </div>
             </div>
         <a href="projects.html" class="aL-button">
@@ -138,7 +186,7 @@
                     <a href="mailto:bennyli737@gmail.com" class="logo-link">
                         <i class="fa-regular fa-envelope" id="email-logo"></i>
                     </a>
-                </div>         
+                </div>       
             <div class="footerLinks">
                 <p class="copyright">&copy;Benny Li 2024</p>
             </div>
@@ -147,6 +195,7 @@
             <script src="js/uikit-icons.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
             <script src="js/lightbox.js"></script>
+            <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
         </footer>
         <div class="cursor"></div>
         <script src="js/main.js"></script>

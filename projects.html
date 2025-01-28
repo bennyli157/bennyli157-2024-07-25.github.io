@@ -47,206 +47,166 @@
     <div class="pHeader">
         <div uk-scrollspy="cls:uk-animation-fade">
             <div class="aHeader">
-                <h1 class="pTitle">projectwork</h1>
+                <h1 class="pTitle">projects</h1>
             </div>
         </div>
-            <div class="window-group">
-                <div uk-scrollspy="cls:uk-animation-fade">
-                    <div class="p-window-2">
-                        <a href="Pasta.html" class="p-img">
-                            <img src="images/3d-pasta-m2.jpg" alt="" class="Project-i-2">
-                        </a>
-                        <div class="pDesc">
-                            <h2 class="p-content">
-                                <a href="Pasta.html" class="projectTextBtn">
-                                    Pasta Package
-                                </a>
-                            </h2>
-                            <p class="projectDesc">Graphic Design</p>
-                            <a href="Pasta.html" class="project-button">
-                                View Project
-                            </a>
+        <div id="myBtnContainer">
+            <div style="display: flex; align-items: center;">
+                <button class="f-btn active" onclick="filterSelection('all')">All</button>
+                <span style="border-left: 1px solid #ddd; height: 28px; margin: 0 12px;"></span>
+                <button class="f-btn" onclick="filterSelection('graphics')">Graphics</button>
+                <span style="border-left: 1px solid #ddd; height: 28px; margin: 0 12px;"></span>
+                <button class="f-btn" onclick="filterSelection('uiux')">UI/UX</button>
+                <span style="border-left: 1px solid #ddd; height: 28px; margin: 0 12px;"></span>
+                <button class="f-btn" onclick="filterSelection('videos')">Videos</button>
+              </div>
+            <!-- <button class="btn" onclick="filterSelection('animals')"> Video</button> -->
+            <!-- <button class="btn" onclick="filterSelection('fruits')"> Fruits</button> -->
+        </div>
+        <div class="container">
+            <!-- CARS=GRAPHIC DESIGN
+             COLORS=UIUX
+             ANIMAL=VIDEO -->
+            <!-- <div class="filterDiv cars">Graphics</div>
+            <div class="filterDiv colors">UI/UX</div>
+            <div class="filterDiv animals">Video</div> -->
+            <!-- <div class="filterDiv fruits">Melon</div> -->
+          </div>
+        <div class="window-group">
+            <div class="filterDiv graphics">
+            <div uk-scrollspy="cls:uk-animation-fade">
+                <div class="p-window-2">
+                    <a href="cards.html" class="p-img">
+                        <div class="overlay-container">
+                            <img src="images/brand-business-cards-m.jpg" alt="" class="Project-i-2">
+                            <div class="overlay-text">View Project</div>
                         </div>
+                    </a>
+                    <div class="pDesc">
+                        
+                        <h2 class="p-content-s">Client Project</h2>
+                        <h2 class="p-content">Business Cards</h2>
+                        <p class="projectDesc">2D Graphic Design</p>
+                    
                     </div>
                 </div>
+            </div>
+            </div>
+            <div class="filterDiv uiux">
                 <div uk-scrollspy="cls:uk-animation-fade">
-                    <div class="p-window-2">
-                        <a href="pPoster.html" class="p-img">
-                            <img src="images/PPoster-pm.jpg" alt="" class="Project-i-2">
-                        </a>
-                        <div class="pDesc">
-                            <h2 class="p-content">
-                                <a href="pPoster.html" class="projectTextBtn">
-                                    Photoshop Poster
-                                </a>
-                            </h2>
-                            <p class="projectDesc">Graphic Design</p>
-                            <a href="pPoster.html" class="project-button">
-                                View Project
-                            </a>
+                <div class="p-window-2">
+                    <a href="filmingPage.html" class="p-img">
+                        <div class="overlay-container">
+                            <img src="images/Film-Page-pm.jpg" alt="" class="Project-i-2">
+                            <div class="overlay-text">View Project</div>
                         </div>
+                    </a>
+                    <div class="pDesc">
+                        <h2 class="p-content-s">Client Project</h2>
+                        <h2 class="p-content">Website Mockup</h2>
+                        <!-- <h2 class="p-content">
+                            <a href="Pasta.html" class="projectTextBtn">Pasta Package</a>
+                        </h2> -->
+                        <p class="projectDesc">UI/UX Design</p>
                     </div>
                 </div>
+                </div>
+            </div>
+            <div class="filterDiv graphics">
                 <div uk-scrollspy="cls:uk-animation-fade">
                     <div class="p-window-2">
-                        <a href="pPainting.html" class="p-img">
-                            <img src="images/Mortimer-pm.jpg" alt="" class="Project-i-2">
-                        </a>
-                            <div class="pDesc">
-                                <h2 class="p-content">
-                                    <a href="pPainting.html" class="projectTextBtn">
-                                        Photoshop Painting
-                                    </a>
-                                </h2>
-                                <p class="projectDesc">Graphic Design</p>
-                                <a href="pPainting.html" class="project-button">
-                                View Project
-                                </a>
+                        <a href="pasta.html" class="p-img">
+                            <div class="overlay-container">
+                                <img src="images/3d-pasta-m2.jpg" alt="" class="Project-i-2">
+                                <div class="overlay-text">View Project</div>
                             </div>
-                    </div>
-                </div>
-                <div uk-scrollspy="cls:uk-animation-fade">
-                    <div class="p-window-2">
-                        <a href="3Poster.html" class="p-img">
-                            <img src="images/3dPoster-pm.jpg" alt="" class="Project-i-2">
                         </a>
                         <div class="pDesc">
-                            <h2 class="p-content">
-                                <a href="3Poster.html" class="projectTextBtn">
-                                    3D Poster
-                                </a>
-                            </h2>
-                            <p class="projectDesc">3D Texture Design</p>
-                            <a href="3Poster.html" class="project-button">
-                            View Project
-                            </a>
+                            <h2 class="p-content-s">Client Project</h2>
+                            <h2 class="p-content">3D Product Mockup</h2>
+                            <!-- <h2 class="p-content">
+                                <a href="Pasta.html" class="projectTextBtn">Pasta Package</a>
+                            </h2> -->
+                            <p class="projectDesc">2D/3D Graphic Design</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="filterDiv uiux">
+                <div uk-scrollspy="cls:uk-animation-fade">
+                    <div class="p-window-2">
+                        <a href="menuPrototype.html" class="p-img">
+                            <div class="overlay-container">
+                                <img src="images/menu-prototype-pm.jpg" alt="" class="Project-i-2">
+                                <div class="overlay-text">UI/UX Design</div>
+                            </div>
+                        </a>
+                        <div class="pDesc">
+                            
+                            <h2 class="p-content-s">Client Project</h2>
+                            <h2 class="p-content">Mobile Menu Prototype</h2>
+                            <p class="projectDesc">UI/UX Design</p>
+                        
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="filterDiv graphics videos">
+                <div uk-scrollspy="cls:uk-animation-fade">
+                    <div class="p-window-2">
+                        <a href="donut.html" class="p-img">
+                            <div class="overlay-container">
+                                <img src="images/donut-m2.jpg" alt="" class="Project-i-2">
+                                <div class="overlay-text">View Project</div>
+                            </div>
+                        </a>
+                        <div class="pDesc">
+                            <h2 class="p-content-s">3D Model</h2>
+                            <h2 class="p-content">Donut Render</h2>
+                            <p class="projectDesc">3D Graphic Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv graphics">
                 <div uk-scrollspy="cls:uk-animation-fade">
                     <div class="p-window-2">
                         <a href="console.html" class="p-img">
-                            <img src="images/xbox-s.png" alt="" class="Project-i-2">
-                        </a>
-                        <div class="pDesc">
-                            <h2 class="p-content">
-                                <a href="console.html" class="projectTextBtn">
-                                    Console Illustration
-                                </a>
-                            </h2>
-                            <p class="projectDesc">Vector Graphic Design</p>
-                            <a href="console.html" class="project-button">
-                            View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div uk-scrollspy="cls:uk-animation-fade">
-                    <div class="p-window-2">
-                            <a href="animations.html" class="p-img">
-                                <div class="Project-i">
-                                    <style>
-                                        .svg{
-                                            width:70%
-                                        }
-                                        
-                                        .cls-1{fill:none;
-                                            stroke: #F8EA02;
-                                            stroke-linejoin:round;
-                                            stroke-dasharray: 1487;
-                                            stroke-dashoffset: -1487;
-                                            animation: draw1 10s infinite both;
-                                }
-                                
-                                        .cls-2{fill:none;
-                                            stroke: #F8EA02;
-                                            stroke-linejoin:round;
-                                            stroke-dasharray: 1487;
-                                            stroke-dashoffset: -1487;
-                                            animation: draw2 10s infinite both;
-                                }
-                                
-                                        .cls-1, .cls-2 {
-                                                    fill: none;
-                                                    stroke-width: 5px;
-                                                    }
-                                
-                                @keyframes draw1 {
-                                            0% {
-                                            stroke-dashoffset: -1487;
-                                            }
-                                            50% {
-                                            stroke-dashoffset: 0;
-                                            }
-                                            100% {
-                                            stroke-dashoffset: -1487;
-                                            }
-                                        }
-                                @keyframes draw2 {
-                                            0% {
-                                            stroke-dashoffset: -1487;
-                                            }
-                                            50% {
-                                            stroke-dashoffset: 0;
-                                            }
-                                            100% {
-                                            stroke-dashoffset: -1487;
-                                            }
-                                        }        
-                                
-                                        
-                                    </style>
-                                    </head>
-                                    <body>
-                                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 397 444.31">
-                                            <defs>
-                                            <style/>
-                                            </defs>
-                                            <path d="M291.95 2.5h-186.9C48.5 2.5 2.5 48.5 2.5 105.05v234.2c0 56.55 46 102.55 102.55 102.55h186.89c56.55 0 102.55-46 102.55-102.55v-234.2c0-56.55-46-102.55-102.55-102.55Z" class="cls-2"/>
-                                            <path d="m124.24 225.54-86.71 86.71 86.96 86.96 27.56-27.56-58.93-58.93L113 292.84h221.37v-39H152.54l-28.3-28.3zM295.77 81.27H56.84v67.65c4.84 32.76 18.98 58.91 67.49 61.71h31.85c17-.33 39.93-7.43 46.86-26.9 12.87 24.42 30.57 26.24 45.21 27.06 8.47-.05 16.94-.11 25.41-.16 36.19-2.71 56.93-23.43 61.71-61.22V62.46h-39.6v18.81Z" class="cls-2"/>
-                                            <path d="M96.55 144.41c2.68 14.85 7.66 28.35 35.75 28.38h21.01c19.07-.16 31.09-8.01 32.34-27.61v-23.43h-89.1v22.66ZM221.07 140.78c-.84 20.68 10.39 31.28 33.44 32.01h12.32c18.04.05 29.41-8.88 30.8-31.24v-19.8h-76.56v19.03Z" class="cls-1"/>
-                                            <path d="M291.95 32.5h-186.9c-40.01 0-72.55 32.55-72.55 72.55v234.2c0 40 32.55 72.55 72.55 72.55h186.89c40.01 0 72.55-32.55 72.55-72.55v-234.2c0-40-32.55-72.55-72.55-72.55Z" class="cls-1"/>
-                                            </svg>
-                                    </body>
-                                </div>
-                            </a>
-                            <div class="pDesc">
-                                <h2 class="p-content">
-                                    <a href="animations.html" class="projectTextBtn">
-                                        Animation Code
-                                    </a>
-                                </h2>
-                                <p class="projectDesc">JS/HTML Animation</p>
-                                <a href="animations.html" class="project-button">
-                                View Project
-                                </a>
+                            <div class="overlay-container">
+                                <img src="images/xbox-s.png" alt="" class="Project-i-2">
+                                <div class="overlay-text">View Project</div>
                             </div>
-                    </div>
-                </div>
-                <div uk-scrollspy="cls:uk-animation-fade">
-                    <div class="p-window-2">
-                        <a href="suit.html" class="p-img">
-                                <img src="images/suit-m.jpg" alt="" class="Project-i">
-                                <!-- <main>
-                                </main>
-                                <script src="js/p5.min.js"></script>
-                                <script src="js/sketch.js"></script> -->
                         </a>
                         <div class="pDesc">
-                            <h2 class="p-content">
-                                <a href="suit.html" class="projectTextBtn">
-                                    Suit Sketch
-                                </a>
-                            </h2>
-                            <p class="projectDesc">JS/HTML Coded Sketch</p>
-                            <a href="suit.html" class="project-button">
-                            View Project
-                            </a>
-                            <!-- ADD SCRAP PROJECTS HERE -->
+                            <h2 class="p-content-s">Vector Sketch</h2>
+                            <h2 class="p-content">Console Illustration</h2>
+                            <p class="projectDesc">Vector Graphic Design</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="filterDiv graphics">
+                <div uk-scrollspy="cls:uk-animation-fade">
+                    <div class="p-window-2">
+                        <a href="pPainting.html" class="p-img">
+                            <div class="overlay-container">
+                                <img src="images/Mortimer-pm.jpg" alt="" class="Project-i-2">
+                                <div class="overlay-text">View Project</div>
+                            </div>
+                        </a>
+                            <div class="pDesc">
+                                <h2 class="p-content-s">Digital Illustration</h2>
+                                <h2 class="p-content">Photoshop Painting</h2>
+                                <p class="projectDesc">2D Graphic Design</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div></div>
+        </div>
+    </div> 
+</div>
             <div uk-scrollspy="cls:uk-animation-fade">
                 <div class="hb-container">
                     <h1 class="b-desc">Interested in my work?</h1>
@@ -257,7 +217,6 @@
                             <img src="images/arrow.svg" alt="Arrow Icon">
                         </div>
                     </a>
-                    
                 </div>
             </div>
     </div>
@@ -268,7 +227,7 @@
                 <img src="images/ttt.svg" alt="Upward Arrow Icon" class="logo-arrow">
             </a>
             <div class="icons">
-                <a href="https://github.com/bennyli157" target="_blank" class="logo-link">
+                <a href="https://github.com/bennyli737" target="_blank" class="logo-link">
                     <i class="fa-brands fa-github" id="github-logo"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/benny-li-a4bb29223/" target="_blank" class="logo-link">
@@ -286,6 +245,57 @@
             <script src="js/uikit-icons.min.js"></script>
         </footer>
     </div>
+    <script>
+        // Filter
+        filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("f-btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+    </script>
     <div class="cursor"></div>
     <script src="js/main.js"></script>
     <script src="js/nav.js"></script>
