@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This page is to showcase my website mockup!">
+    <meta name="description" content="This page is to showcase my 3D pasta box!">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="Benny Li">
-    <title>Filming Page - Benny Li Portfolio</title>
+    <title>Donut Render Project - Benny Li Portfolio</title>
     <link rel="icon" href="/images/logo.svg">
     <link rel="stylesheet" href="css/uikit.min.css"/>
     <link href="css/lightbox.css" rel="stylesheet">
@@ -47,18 +47,18 @@
         <div class="aL-Top">
             <div class="aL-Intro">
                 <h1 class="aL-Title">
-                    -UI/UX Website Design
+                    -3D Graphic Design
                 </h1>
                 <h1 class="aL-Title-2">
-                    Filming Website Mockup
+                   Donut Render
                 </h1>
-            </div>    
-            <a href="images/Film-Page-og.jpg" data-lightbox= "aL-img" data-title="Final Product" class="pZ-img">
-                <img src="images/Film-Page-m.jpg" alt="aL-img" class="aL-img">
-            </a>
+             </div>    
+             <a href="images/donut.jpg" data-lightbox= "aL-img" data-title="Final Product" class="pZ-img">
+                <img src="images/donut-m.jpg" alt="aL-img" class="aL-img">
+            </a>        
             <!-- <div class="aL-Intro-b">
                 <h1 class="aL-Title-b">
-                    Project Type: UI/UX
+                    Project Type: Graphic Design
                 </h1>
             </div> -->
             <div class="aL-Intro-b">
@@ -70,34 +70,48 @@
                 <div class="grid-container-p">
                     <div class="p-window">
                         <div class="s-svg">
-                            <img src="images/F.svg" alt="" class="logo-p">
+                            <img src="images/B.svg" alt="" class="logo-p">
                         </div>
-                            <h1 class="s-content">Figma</h1> 
-                    </div>
-                    <div class="p-window">
-                        <div class="s-svg">
-                            <img src="images/P.svg" alt="" class="logo-p">
-                        </div>
-                            <h1 class="s-content">Photoshop</h1>
+                            <h1 class="s-content">Blender</h1> 
                     </div>
                 </div>
             </div>
         </div>
 
 <div class="aLWrapper">
-    <h1 class="desc-title">Objectives</h1>
-    <p class="aLDesc1">The mockup is made for a website's redesign which was later used for the official online page.</p> 
+    <h1 class="desc-title">3D Model Demo</h1>
+    <p class="aLDesc1">Below is the 3d viewer based on the model made in Blender.</p>
 </div>
  </div>
     <div class="aL-container">
+        <model-viewer class="custom-model-viewer" src="/images/donut model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/demoDonut.png" shadow-intensity="1">
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+        </model-viewer>          
+          
+        <!-- <p class="aLDesc2-5">*Rendered Video -->
+        </p> 
+        
+        <!-- End of 6x6 Image Grid -->
+        
         <h1 class="aL-dTitle">
             Results
         </h1>
-        <p class="aLDesc2">A Figma demo illustrating the intended navigation experience for the site.
-        </p> 
-        <div class="iframe-container-2">
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/1sAf9hnNJ7oflutcOMr4Rg/PFP-Mockups?page-id=0%3A1&node-id=2-45&node-type=frame&viewport=608%2C428%2C0.12&scaling=scale-down-width&content-scaling=fixed&embed-host=share&hide-ui=1&show-proto-sidebar=0" allowfullscreen></iframe>
-        </div>
+        <!-- <p class="aLDesc2"> The image here is the final product to display the 3d model added into an image from unsplash, where I used Adobe Dimensions to adjust the lighting to fit the environment around the pastabox.
+        </p>  -->
+            <div class="pPcontainer2">
+                <div class="pPContent1">
+                    <video controls class="p-video">
+                        <source src="images/donut.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <p class="aLDesc3">*Final video render</p>
         <a href="projects.html" class="aL-button">
             View My Other Projects!
         </a>
@@ -141,5 +155,6 @@
         </footer>
         <div class="cursor"></div>
         <script src="js/main.js"></script>
+        <script src="js/nav.js"></script>
 </body>
 </html>
