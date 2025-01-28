@@ -137,6 +137,11 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+@media only screen and (max-width: 820px) {
+.lb-nav a.lb-prev, .lb-nav a.lb-next {
+  opacity: .4;
+}
+}
 
 .lb-dataContainer {
   margin: 0 auto;
